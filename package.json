@@ -7,8 +7,7 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "deploy": "astro build && touch dist/.nojekyll && npx gh-pages -d dist"
+    "astro": "astro"  
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
