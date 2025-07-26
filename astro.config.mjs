@@ -1,16 +1,16 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
+import github from "@astrojs/github";
 
-// https://astro.build/config
 export default defineConfig({
-  site: "https://AymaneMehdi.github.io/BlockNova",
-  base: "/BlockNova",
+  site: "https://aymanemehdi.github.io/BlockNova", 
+  base: "/BlockNova",                              
   trailingSlash: "always",
   integrations: [
-    tailwind({
-      applyBaseStyles: false,
-    }),
+    tailwind({ applyBaseStyles: false }),
     react(),
+    github(),
   ],
 });
+
