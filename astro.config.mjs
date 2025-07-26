@@ -4,8 +4,8 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://USERNAME.github.io/REPO",
-  base: "/REPO",
+  site: "https://AymaneMehdi.github.io/BlockNova",
+  base: "/BlockNova",
   trailingSlash: "always",
   integrations: [
     tailwind({
