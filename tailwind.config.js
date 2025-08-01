@@ -1,11 +1,13 @@
-import typography from "@tailwindcss/typography";
+import typography from '@tailwindcss/typography';
 
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./src/**/*.{astro,html,js,jsx,ts,tsx,vue,svelte,md,mdx}",
+    "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
+    "./pages/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
+    "./layouts/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
+    "./public/**/*.html"
   ],
-  darkMode: "class",
   theme: {
     screens: {
       sm: "375px",
@@ -25,18 +27,9 @@ export default {
       },
     },
     extend: {
-      colors: {
-        brand: "#6366f1",
-      },
-      typography: {
-        DEFAULT: {
-          css: {
-            color: "#e4e4e7",
-            a: { color: "#a78bfa" },
-          },
-        },
-      },
     },
   },
-  plugins: [typography],
+  plugins: [
+    typography,
+  ],
 };
